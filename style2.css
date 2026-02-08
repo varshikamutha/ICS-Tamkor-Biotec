@@ -1,0 +1,377 @@
+
+    :root {
+      --logo-green: #149a55;
+      --text-dark: #111;
+      --light-gray: #ffffff;
+      --border-light: #e2e2e2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: var(--text-dark);
+    }
+
+    img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    .top-bar {
+      background-color: #ffffff;
+      position: relative;
+      padding: 17px 30px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .top-left {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.75rem;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .email-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    }
+
+
+    .top-center {
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700;
+    }
+
+    .top-right {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color:var(--logo-green);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+
+    .top-right img { 
+        display: block; 
+    }
+
+    /* ---------- NAV BAR ---------- */ 
+    .navbar { 
+        background-color: #ffffff; 
+        padding: 15px 0; 
+        border-bottom: 2px solid var(--logo-green); 
+    } 
+
+    .nav-container { 
+        width: 90%; 
+        max-width: 1200px; 
+        margin: auto; 
+        display: flex; 
+        justify-content: center; 
+    } 
+
+    .nav-links { 
+        list-style: none; 
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px; 
+    } 
+    
+    .nav-links a { 
+        text-decoration: none; 
+        font-size: 0.9rem; 
+        color: #000; 
+        font-weight: 400; 
+        letter-spacing: 0.4px; 
+        padding-bottom: 4px; 
+        transition: all 0.3s ease; position: relative; } 
+        
+    .nav-links a::after { 
+        content: ""; 
+        position: absolute; 
+        width: 0; 
+        height: 2px; 
+        background-color: var(--logo-green);
+        left: 0;
+        bottom: -4px; 
+        transition: width 0.3s ease; 
+    } 
+        
+    .nav-links a:hover { 
+        color: var(--logo-green); 
+    } 
+    
+    .nav-links a:hover::after { 
+        width: 100%; 
+    }
+
+    section {
+      /*min-height: 100vh;*/
+      padding: 80px 10%;
+    }
+    
+    section h2 { 
+        color: var(--logo-green); 
+        margin-bottom: 20px;
+        font-family: zalando-sans-expanded, sans-serif; 
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+
+    /* HOME HERO */
+    #home {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      width: 90%;
+      background-color: rgb(255,255,255);
+      border: 1px solid rgb(250,250,250);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      gap: 50px;
+      padding: 3% 5%;
+    }
+
+    #home p {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .hero-text {
+      background-color: rgb(255,255,255);
+    }
+    .hero-text h2{
+        font-size: 4rem;
+    }
+    .hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    #about{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      width: 90%;
+      background-color: rgb(255,255,255);
+      border: 1px solid rgb(250,250,250);
+      border-radius: 15px;
+      padding: 3% 5%;
+    }
+
+    #about p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        margin-bottom: 17px;    
+    }
+
+    #about div{
+        display: flex;
+        justify-content: center;
+    }
+    /* PRODUCT CARDS */
+
+    #product {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      width: 90%;
+      background-color: rgb(255,255,255);
+      border: 1px solid rgb(250,250,250);
+      border-radius: 15px;
+      padding: 3% 5%;
+    }
+    #product p {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    video {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 27px;
+}
+
+    .certifi_img {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .certifi_img img{
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05)
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--logo-green);
+      color: #fff;
+      padding: 60px 10%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items:center;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    footer h2 { 
+        color:#fff; 
+        margin-bottom: 15px;
+        font-family: zalando-sans-expanded, sans-serif; 
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+    }
+  footer p {
+        font-size: 1.1rem;
+        line-height: 1.5;   
+    }
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  background-color: #149a55;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-to-top:hover {
+  background-color: #0f7a41;
+  transform: translateY(-3px);
+}
+
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .top-center {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .top-left, .top-right {
+    display: none;
+  }
+
+  .top-center {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  #product p,
+  #about p,
+  footer p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  video {
+    max-width: 100%;
+  }
+}
+
