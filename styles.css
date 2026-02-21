@@ -1,4 +1,3 @@
-/*<=
     :root {
       --logo-green: #149a55;
       --text-dark: #111;
@@ -71,10 +70,8 @@
         display: block; 
     }
 
-=>*/
-
     /* ---------- NAV BAR ---------- */ 
-/*<=
+
     .navbar { 
         background-color: #ffffff; 
         padding: 15px 0; 
@@ -124,7 +121,6 @@
     .nav-links a:hover::after { 
         width: 100%; 
     }
-=>*/
     section {
       /*min-height: 100vh;*/
       padding: 80px 10%;
@@ -142,7 +138,6 @@
 
 
     /* HOME HERO */
-/*<=
     #home {
       margin-left: auto;
       margin-right: auto;
@@ -197,9 +192,8 @@
         display: flex;
         justify-content: center;
     }
-=>*/
     /* PRODUCT CARDS */
-/*<=
+
     #product {
       margin-left: auto;
       margin-right: auto;
@@ -248,9 +242,9 @@
       border-radius: 8px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.05)
     }
-=>*/
+
     /* FOOTER */
-/*<=
+
     footer {
       background: var(--logo-green);
       color: #fff;
@@ -306,7 +300,6 @@
   transform: translateY(-3px);
 }
 
-=>*/
 
 /* ---------- RESPONSIVE DESIGN ---------- */
 
@@ -380,4 +373,5 @@
     max-width: 100%;
   }
 }
+
 
